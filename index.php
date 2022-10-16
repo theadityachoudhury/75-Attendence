@@ -43,7 +43,10 @@
        if(isset($_POST['submit'])){
           // getting the values and securing the values
        $present = strip_tags(htmlspecialchars($_POST['present']));
+       $present = $present > 0 ? $present : 0;
        $total = strip_tags(htmlspecialchars($_POST['total']));
+       $total = $total > 0 ? $total : 0;
+
        //when data is get then include policy.php and showing the text
           include 'policy.php';
        }else{
@@ -52,11 +55,11 @@
                <form action="/" method="post" accept-charset="utf-8">
                   <div class="form-group">
                      <label for="present" class="h3" >Present</label>
-                     <input type="number" name="present" value="" class="form-control" id="present" required/>
+                     <input type="number" name="present" value="" class="form-control form-control-lg" id="present" placeholder="Present" required/>
                   </div>
                   <div class="form-group">
                      <label for="total" class="h3" >Total</label>
-                     <input type="number" name="total" value="" class="form-control" id="total" required/>
+                     <input type="number" name="total" value="" class="form-control form-control-lg" id="total" placeholder="Total" required/>
                   </div>
                <input type="submit" name="submit" value="Calculate" class="btn btn-primary my-3" required/>
                </form>
