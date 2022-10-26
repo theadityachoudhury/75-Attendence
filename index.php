@@ -27,9 +27,6 @@
                      <a class="nav-link" href="#">About Us</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="https://privacypolicygen.herokuapp.com/" target="_blank">Policygen</a>
-                  </li>
-                  <li class="nav-item">
                      <a class="nav-link" href="/contactus.php">Contact Us</a>
                   </li>
                </ul>
@@ -61,7 +58,7 @@
                      <label for="present" class="h3" >Present</label>
                      <input type="number" name="present" value="" class="form-control form-control-lg" id="present" placeholder="Present" required/>
                   </div>
-                  <div class="form-group" style="padding-top: 15px">
+                  <div class="form-group">
                      <label for="total" class="h3" >Total</label>
                      <input type="number" name="total" value="" class="form-control form-control-lg" id="total" placeholder="Total" required/>
                   </div>
