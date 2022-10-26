@@ -4,6 +4,7 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="./screenshots/attendance75website.jpg" type = "image/x-icon">
       
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
@@ -24,6 +25,9 @@
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="https://privacypolicygen.herokuapp.com/" target="_blank">Policygen</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="/contactus.php">Contact Us</a>
@@ -48,7 +52,7 @@
        $total = $total > 0 ? $total : 0;
 
        //when data is get then include policy.php and showing the text
-          include 'policy.php';
+          include 'printy.php';
        }else{
           //if submit is not isset then asking to submit the form
        ?>
@@ -57,7 +61,7 @@
                      <label for="present" class="h3" >Present</label>
                      <input type="number" name="present" value="" class="form-control form-control-lg" id="present" placeholder="Present" required/>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group" style="padding-top: 15px">
                      <label for="total" class="h3" >Total</label>
                      <input type="number" name="total" value="" class="form-control form-control-lg" id="total" placeholder="Total" required/>
                   </div>

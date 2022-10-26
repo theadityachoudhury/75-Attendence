@@ -11,9 +11,9 @@
 
 ## Screenshots
 
-![App Screenshot](https://github.com/adityasubham03/75-Attendence/blob/master/screenshots/Screenshot%202022-06-20%20181528.png)
-![App Screenshot](https://github.com/adityasubham03/75-Attendence/blob/master/screenshots/Screenshot%202022-06-20%20181608.png)
-![App Screenshot](https://github.com/adityasubham03/75-Attendence/blob/master/screenshots/Screenshot%202022-06-20%20181624.png)
+![App Screenshot](./screenshots/Screenshot%202022-06-20%20181528.png)
+![App Screenshot](./screenshots/Screenshot%202022-06-20%20181608.png)
+![App Screenshot](./screenshots/Screenshot%202022-06-20%20181624.png)
 
 
 ## Demo
