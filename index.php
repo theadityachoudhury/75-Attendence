@@ -27,6 +27,9 @@
                      <a class="nav-link" href="#">About Us</a>
                   </li>
                   <li class="nav-item">
+                     <a class="nav-link" href="https://privacypolicygen.herokuapp.com/" target="_blank">Policygen</a>
+                  </li>
+                  <li class="nav-item">
                      <a class="nav-link" href="/contactus.php">Contact Us</a>
                   </li>
                </ul>
