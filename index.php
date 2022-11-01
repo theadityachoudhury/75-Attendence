@@ -7,10 +7,21 @@
 
 <link rel="icon" type="image/png" href="favicon.ico" />
 
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
 <link rel="stylesheet" type="text/css" href="css/icon-font.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<link rel="stylesheet" type="text/css" href="css/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/animation.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/select2.min.css">
 
 <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
 
+<link rel="stylesheet" type="text/css" href="css/util.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
 <meta name="robots" content="noindex, follow">
