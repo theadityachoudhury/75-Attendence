@@ -1,21 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>75 Attendence</title>
+<title>Attendance 75</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel="icon" href="attendance75.svg" type = "image/x-icon">
 
-<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v14/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/icon-font.min.css">
 
-<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v14/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v14/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<link rel="stylesheet" type="text/css" href="css/animation.min.css">
 
-<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v14/vendor/animsition/css/animsition.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 
-<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v14/css/util.css">
-<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v14/css/main.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/select2.min.css"> -->
+
+<!-- <link rel="stylesheet" type="text/css" href="css/daterangepicker.css"> -->
+
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
 <meta name="robots" content="noindex, follow">
 </head>
@@ -31,9 +36,9 @@
        if(isset($_POST['submit'])){
           // getting the values and securing the values
        $present = strip_tags(htmlspecialchars($_POST['present']));
-      //  $present = $present > 0 ? $present : 0;
+       //$present = $present > 0 ? $present : 0;
        $total = strip_tags(htmlspecialchars($_POST['total']));
-      //  $total = $total > 0 ? $total : 1;
+       //$total = $total > 0 ? $total : 0;
        $percent = $_POST['percent'];;
 
        //when data is get then include policy.php and showing the text
@@ -61,19 +66,19 @@ Total
 <input class="input100" type="number" min="1" name="total" autocomplete="off">
 <span class="focus-input100"></span>
 </div>
-<div class="input-container percentage-select-container">
+<div class="input-container percentage-select-container" style="padding-top:15px">
 <span class="txt1 p-b-11">
 Percentage
 </span>
-<div style="padding-top:20px">
-        <select name="percent" id="percent" class="percent-select">
-          <option type="number" value="60">60%</option>
-          <option type="number" value="65">65%</option>
-          <option type="number" value="70">70%</option>
-          <option type="number" value="75" selected>75%</option>
-          <option type="number" value="80">80%</option>
-          <option type="number" value="85">85%</option>
-          <option type="number" value="90">90%</option>
+<div style="padding-top:15px">
+        <select>
+          <option value="60">60%</option>
+          <option value="65">65%</option>
+          <option value="70">70%</option>
+          <option value="75" selected>75%</option>
+          <option value="80">80%</option>
+          <option value="85">85%</option>
+          <option value="90">90%</option>
         </select>
         </div>
       </div>
@@ -91,22 +96,14 @@ Calculate
 </div>
 <div id="dropDownSelect1"></div>
 
-<script src="https://colorlib.com/etc/lf/Login_v14/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
 
-<script src="https://colorlib.com/etc/lf/Login_v14/vendor/animsition/js/animsition.min.js"></script>
+<script src="js/animation.min.js"></script>
 
-<!-- <script src="https://colorlib.com/etc/lf/Login_v14/vendor/bootstrap/js/popper.js"></script> -->
-<!-- <script src="https://colorlib.com/etc/lf/Login_v14/vendor/bootstrap/js/bootstrap.min.js"></script> -->
+<script src="js/countdowntime.js"></script>
 
-<script src="https://colorlib.com/etc/lf/Login_v14/vendor/select2/select2.min.js"></script>
+<script src="js/main.js"></script>
 
-<script src="https://colorlib.com/etc/lf/Login_v14/vendor/daterangepicker/moment.min.js"></script>
-<!-- <script src="https://colorlib.com/etc/lf/Login_v14/vendor/daterangepicker/daterangepicker.js"></script> -->
-
-<!-- <script src="https://colorlib.com/etc/lf/Login_v14/vendor/countdowntime/countdowntime.js"></script> -->
-
-<script src="https://colorlib.com/etc/lf/Login_v14/js/main.js"></script>
-
-
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7635535d9e747a1c","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.10.3","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
