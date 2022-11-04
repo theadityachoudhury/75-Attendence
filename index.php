@@ -39,7 +39,7 @@
        //$present = $present > 0 ? $present : 0;
        $total = strip_tags(htmlspecialchars($_POST['total']));
        //$total = $total > 0 ? $total : 0;
-       $percent = $_POST['percent'];;
+       $percent = $_POST['percent'];
 
        //when data is get then include policy.php and showing the text
           include 'printy.php';
@@ -70,19 +70,18 @@ Total
 <span class="txt1 p-b-11">
 Percentage
 </span>
-<div name="percent" id="percent" class="percent-select" style="padding-top:15px">
-        <select>
-          <option value="60">60%</option>
-          <option value="65">65%</option>
-          <option value="70">70%</option>
-          <option value="75" selected>75%</option>
-          <option value="80">80%</option>
-          <option value="85">85%</option>
-          <option value="90">90%</option>
+<div style="padding-top:15px">
+        <select name="percent" id="percent" class="percent-select">
+          <option type="number" value="60">60%</option>
+          <option type="number" value="65">65%</option>
+          <option type="number" value="70">70%</option>
+          <option type="number" value="75" selected>75%</option>
+          <option type="number" value="80">80%</option>
+          <option type="number" value="85">85%</option>
+          <option type="number" value="90">90%</option>
         </select>
-        </div>
-      </div>
-
+</div>
+       </div>
 
 
 <div class="container-login100-form-btn" style= "padding-top:20px; align-items:center;">
