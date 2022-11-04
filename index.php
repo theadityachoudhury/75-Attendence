@@ -70,7 +70,7 @@ Total
 <span class="txt1 p-b-11">
 Percentage
 </span>
-<div style="padding-top:15px">
+<div style="padding-top:15px" name="percent">
         <select>
           <option value="60">60%</option>
           <option value="65">65%</option>
